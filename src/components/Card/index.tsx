@@ -1,5 +1,5 @@
 import bgheader from "../../assets/bg-header.png";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import "./styles.scss";
 
 const Card = () => {
