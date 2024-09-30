@@ -1,0 +1,104 @@
+@import "../../sass/sass-util/mixins";
+@import "../../sass/variable/variable";
+
+.card {
+  width: 510px;
+  border-radius: 64px;
+  background: $white;
+  @include boxShadow;
+  overflow: hidden;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    figure {
+      margin-top: calc(0px - 16rem - 6px);
+      text-align: center;
+      img {
+        width: 10.625rem;
+        height: 10.625rem;
+        border-radius: 100%;
+      }
+    }
+    figcaption {
+      text-align: center;
+      h1 {
+        font-size: 2.38rem;
+        font-weight: 500;
+        letter-spacing: 1.6px;
+        margin-top: 8.75rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $black;
+        margin-top: 0.25rem;
+        opacity: 0.6;
+      }
+    }
+  }
+  &-icon {
+    margin: 2.5rem 0;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      li {
+        list-style: none;
+        a {
+          svg {
+            width: 2rem;
+            height: 2rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  &-content {
+    padding: 0 3rem 4.7rem 3rem;
+    p {
+      font-size: 1.12rem;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2.75rem;
+    a {
+      font-size: 1.25rem;
+      cursor: pointer;
+      font-weight: 500;
+      border-radius: 50px;
+      width: 11.94rem;
+      height: 3.56rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:focus {
+        outline: 2px solid $button-outline;
+      }
+    }
+    &-full {
+      background-color: $button-full;
+      border: 1px solid $button-full;
+      color: $white;
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+    &-outline {
+      background-color: transparent;
+      color: $button-outline;
+      border: 1px solid $button-outline;
+    }
+  }
+}
