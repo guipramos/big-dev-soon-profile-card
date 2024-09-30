@@ -15,8 +15,8 @@ const Card = () => {
             alt="Header bg main"
           />
           <figcaption>
-            <h1>Johnny Rogers</h1>
-            <p>@jonnyrogers</p>
+            <h1>Guilherme Ramos</h1>
+            <p>@guipramos</p>
           </figcaption>
         </figure>
       </header>
